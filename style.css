@@ -1,0 +1,195 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #E6DFD5 0%, #D1C7B7 100%);
+    color: #4A453F;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+.balance-container {
+    width: 100vw;
+    max-width: 900px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.main-layout {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.balance-container .balance-card {
+    padding: 0px;        /* less padding → shorter */
+    text-align: center;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.container {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(74, 69, 63, 0.1);
+    width: 100%;
+    max-width: 830px;
+}
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    flex: 2;
+}
+.two-columns .container {
+    flex: 1;
+}
+h1, h2, h3 {
+    color: #3B3530;
+    text-align: center;
+    font-weight: 500;
+}
+.balance-card {
+    background: rgba(210, 202, 190, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.balance-card p {
+    font-size: 32px;
+    font-weight: 600;
+    color: #0096C7; /* Clean River Water Accent */
+    margin: 8px 0 0 0;
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #3B3530;
+    outline: none;
+}
+
+input::placeholder {
+    color: #7A7267;
+}
+
+input:focus {
+    border-color: #0096C7;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+button {
+    background-color: #0096C7; /* River Water Contrast */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background-color: #0077B6; /* Slightly deeper river blue on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border-left: 4px solid #0096C7;
+    display: flex;
+    justify-content: space-between;
+    color: #4A453F;
+}
+
+.savings-sidebar {
+    max-width: 300px;
+    padding: 20px;
+    background:  rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    height: 350px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.goal-card {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    background: #e9ecef;
+    border-radius: 4px;
+    height: 10px;
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    background: #28a745;
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+/* Shatter Animation State */
+.shattering {
+    animation: shatter 0.5s forwards;
+}
+
+@keyframes shatter {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1) rotate(5deg); filter: blur(1px); }
+    100% { transform: scale(0) rotate(-15deg); opacity: 0; }
+}
+.piggy-bank svg { width: 200px; }
+
+
+
+
+
+
+
